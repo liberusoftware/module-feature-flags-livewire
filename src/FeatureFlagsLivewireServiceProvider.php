@@ -12,7 +12,6 @@ final class FeatureFlagsLivewireServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'feature-flags-livewire');
-        Livewire\Livewire::component('feature-flags-livewire-overview', Liberu\Foundation\FeatureFlagsLivewire\Livewire\Overview::class);
+        Livewire::component('feature-flags-livewire-overview', Liberu\Foundation\FeatureFlagsLivewire\Livewire\Overview::class);
     }
 }
-
